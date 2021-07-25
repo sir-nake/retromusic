@@ -1,0 +1,143 @@
+#opll_mode  0
+#machine_id 2
+#lfo_mode   0
+#title  {   "FM Voice Sample"   }
+#tempo      105
+
+@v15 = {						;Brass1
+;	TL FB
+	28, 7,
+;	AR DR SL RR KL MT AM VB EG KR DT
+	 6, 2,15, 0, 0, 2, 0, 0, 1, 0, 0,
+	12, 0,10, 6, 0, 2, 0, 0, 1, 0, 0 }
+
+@v16 = {						;Brass2
+;	TL FB
+	28, 7,
+;	AR DR SL RR KL MT AM VB EG KR DT
+	 8, 4,10, 0, 0, 2, 0, 0, 1, 0, 0,
+	15, 0, 0, 6, 0, 2, 0, 0, 1, 0, 0 }
+
+@e0 = {0,0,ef8=128}
+@e1 = {0,0,e:2f:4 a=64}
+
+;   1-3 ... PSG
+;   4-8 ... SCC
+;   9-e ... OPLL
+
+
+; intro
+9bd @6 v13 l16 o5
+ace @10 v12 l16 o5
+
+g o1 v10 @16
+h o2 v10 @1
+
+; intro
+12 r1 r1 
+
+9a r1 r1
+bc r1 r1
+de r1 r1
+f  r1 r1
+gh b-8b-8) b-8b-8) b-8b-8 ) b-8b-8 ) b-8b-8 ) b-8b-8 b-8b-8 b-8b-8
+
+; a-melody
+12 [ v12
+2  @\16
+12 r1 r1 r1
+12 @e0 o4 b-8.a-16r8b-8&b-4&b-16>c32d-32e-32f32g32a-32 b-1 a-2 e-2
+12 f4g-8f8&f2&f2.&f32 < l32 b->cd-e-fga- b-1 a-2 >d-2 < b-1 & b-2 r2
+2 @\0
+
+9bd [ @6 v13 l16 o5
+ace [ @10 v12 l16 o5
+
+9a b-8.a-r8 b-8.a-r8 b-b-a- r b-8.a-r8b-8.a-r8 b-b-a- r b-8.a-r8 b-8&b-2&b-2.. r8
+bc f8.e- r8 f8.e-r8  ffe-r    f8. e-r8f8.e-r8  ffe-r    f8. e-r8 f8&f2&f2.. r8
+de < b-8.b-r8b-8.b-r8b-b-b- r b-8.b-r8b-8.b-r8b-b-b- r b-8.b-r8b-8&b-2&b-2.. r8
+
+9a b-8.a-r8 b-8.a-r8 b-b-a- r b-8.a-r8b-8.a-r8 b-b-a- r b-8.a-r8 b-8&b-2&b-2.. r8
+bc f8.e- r8 f8.e-r8  ffe-r    f8. e-r8f8.e-r8  ffe-r    f8. e-r8 f8&f2&f2.. r8
+de b-8.b-r8b-8.b-r8b-b-b- r b-8.b-r8b-8.b-r8b-b-b- r b-8.b-r8b-8&b-2&b-2.. r8
+
+9a b-8.a-r8 b-8.a-r8 b-b-a- r b-8.a-r8b-8.a-r8 b-b-a- r b-8.a-r8 b-8&b-2&b-2 r2
+bc f8.e- r8 f8.e-r8  ffe-r    f8. e-r8f8.e-r8  ffe-r    f8. e-r8 f8&f2&f2 r2
+de b-8.b-r8b-8.b-r8b-b-b- r b-8.b-r8b-8.b-r8b-b-b- r b-8.b-r8b-8&b-2&b-2 r2
+
+f [ r1r1 r1r1 r1r1 r1r1 r1r1 r1r1
+
+gh [ b8b8b8b8 b8b8b8b8 b8b8b8b8 b8b8b8b8
+gh b-8b-8) b-8b-8) b-8b-8 ) b-8b-8 ) b-8b-8 ) b-8b-8 b-8b-8 b-8b-8
+gh b8b8b8b8 b8b8b8b8 b8b8b8b8 b8b8b8b8
+gh b-8b-8) b-8b-8) b-8b-8 ) b-8b-8 ) b-8b-8 ) b-8b-8 b-8b-8 b-8b-8
+gh b8b8b8b8 b8b8b8b8 b8b8b8b8 b8b8b8b8
+gh b-8b-8) b-8b-8) b-8b-8 ) b-8b-8 ) b-8b-8 ) b-8b-8 b-8b-8 b-8b-8
+
+; b-melody
+12 @e1 v10
+1 o4 f1f1f1f1
+1 o4 f1f1f1f1
+2 o3 e-1e-1e-1e-1
+2 o3 e-1e-1e-1e-1
+
+9abc r1r1r1r1r1r1r1r1
+
+d @3 l8 v13 o5 @e1
+e @2 l8 v12 o5
+f @2 l8 v8 o5 r16 @\8
+def ffb->d- c<a-e-f d-e-cd- <b- >c<a-e-f1 r1
+def > ffb->d- cd-e-f d-e-cd- <b->c<a-b-&b-1 > (( fe-)b-f)e-b-fe-
+
+gh b-8b-8) b-8b-8) b-8b-8 ) b-8b-8 ) b-8b-8 ) b-8b-8 b-8b-8 b-8b-8
+gh b-8b-8) b-8b-8) b-8b-8 ) b-8b-8 ) b-8b-8 ) b-8b-8 b-8b-8 b-8b-8
+gh b-8b-8) b-8b-8) b-8b-8 ) b-8b-8 ) b-8b-8 ) b-8b-8 b-8b-8 b-8b-8
+gh b-8b-8) b-8b-8) b-8b-8 ) b-8b-8 ) b-8b-8 ) b-8b-8 b-8b-8 b-8b-8
+
+; c-melody
+12 r1r1r1r1r1r1r1r1
+9b @6 v13 l16 o5
+ac @10 v12 l16 o5
+
+9a l8 >b-4a-8e-8&e-2 r8 b-8a-8e-8b-8a-8e-4
+9a b-4a-8e-8&e-2 r8 b-8a-8e-8b-8a-8e-4
+9a b4ae&e2 r baebae4 b4ae&e2 r baebaef+
+
+bc l8 >f4e-<b-&b-2 r >fe-<b->fe-<b-4>
+bc f4e-<b-&b-2 r >fe-<b->fe-<b-4
+bc >f+4e<b&b2 r >f+e<b>f+e<b4 >f+4e<b&b2 r >f+e<b>f+ec+4
+
+
+def l8 b-fe-b-fe-b-f e-b-fe-b-fe-b- fe-b-fe-b-fe-b-fe-b-fe-b-f
+def bf+ebf+ebf+ ebf+ebf+eb f+ebf+ebf+e bf+ebf+ebf+
+
+gh l8 bbbbbbbb bbbbbbbb bbbbbbbb bbbbbbbb
+gh > c+c+c+c+c+c+c+c+ c+c+c+c+c+c+c+c+ c+c+c+c+c+c+c+c+ c+c+c+c+c+c+c+c+
+
+; d-melody
+12 r1r1r1r1
+
+9a l8 d<f+>c+<f+bf+>c+<f+ >d<f+>c+<f+bf+>c+<f+ >f+<b>e<b>d<b>e<b >f+<b>e<b>d<b>e<b
+bc l8 <f+<b>e<b>d<b>e<b >f+<b>e<b>d<b>e<b >>d<f+>c+<f+bf+>c+<f+ >d<f+>c+<f+bf+>c+<f+
+
+def l8 bf+dbf+dbf+ dbf+dbf+db f+dbf+dbf+d bf+dbf+dbf+
+
+gh l8 < bbbbbbbb bbbbbbbb bbbbbbbb bbbbbbbb
+ 
+; fin
+2 @\16
+12 v12 @e0 o4 b-2.&b-8b-16>c16d-2.&d8d-16e-16f1 r1 ]
+
+9a l8 >f<b->e-<b->d-<b->e-<b- >f<b->e-<b->d-<b->e-<b- >f<b->e-<b->d-<b->e-<b- >f<b->e-<b->d-<b->e-<b- ]
+bc l8 >d-<f>c<fb-f>c<f >d-<f>c<fb-f>c<f >d-<f>c<fb-f>c<f >d-<f>c<fb-f>c<f ]
+
+def l16 b-b-ffd-d-b-b-ffd-d-b-b-ff d-d-b-b-ffd-d-b-b-ffd-d-b-b- ffd-d-b-b-ffd-d-b-b-ffd-d-
+de b-b-ffd-d-b-b-ffd-d-b-b-ff ]
+f b-b-ffd-d-b-b-ffd-d-b-b-f ]
+
+gh l8 b-b-b-b-b-b-b-b- b-b-b-b-b-b-b-b- b-b-b-b-b-b-b-b- b-b-b-b-b-b-b-b- ]
+
+
+;  a o3 v10 @15 b-8b-8b-8b-8 b-8b-8b-8b-8
+
+ 

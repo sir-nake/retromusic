@@ -1,0 +1,109 @@
+#opll_mode  0
+#machine_id 2
+#lfo_mode   0
+#title  {   "FM Voice Sample"   }
+#tempo      96
+
+@s06 = { 18407F70 58384030 481830F8 08F8F8F8        ;Chorus
+         F8E8E0E0 E0D8D0D0 C8D0D8E0 C0D8E0F0 }
+
+@v15 = {						;Brass1
+;	TL FB
+	28, 7,
+;	AR DR SL RR KL MT AM VB EG KR DT
+	 6, 2,15, 0, 0, 2, 0, 0, 1, 0, 0,
+	12, 0,10, 6, 0, 2, 0, 0, 1, 0, 0 }
+
+@v16 = {						;Brass2
+;	TL FB
+	28, 7,
+;	AR DR SL RR KL MT AM VB EG KR DT
+	 8, 4,10, 0, 0, 2, 0, 0, 1, 0, 0,
+	15, 0, 0, 6, 0, 2, 0, 0, 1, 0, 0 }
+
+@v17 = {						;Synthe Bell
+;	TL FB
+    25, 0,
+;	AR DR SL RR KL MT AM VB EG KR DT
+	10,15, 3, 0, 0,10, 0, 0, 0, 0, 0,
+	15, 4, 2, 3, 0, 2, 0, 0, 0, 0, 0 }
+
+@v18 = {						;Synthe Brass
+;	TL FB
+	 4, 3,
+;	AR DR SL RR KL MT AM VB EG KR DT
+	15,14, 1, 1, 0, 1, 0, 0, 0, 0, 0,
+	15,15, 0, 0, 0, 5, 0, 0, 0, 0, 1 }
+
+@v19 = { ; Wood
+;       TL FB
+        33, 5,
+; AR DR SL RR KL MT AM VB EG KR DT
+  10, 4, 1,10, 0, 1, 0, 0, 1, 0, 0,
+  10, 4, 2, 8, 0, 2, 0, 0, 1, 0, 0 }
+
+@v20 = { ; Slap
+;       TL FB
+        16, 5,
+; AR DR SL RR KL MT AM VB EG KR DT
+  15, 8, 3, 3, 0, 5, 0, 0, 0, 1, 1,
+  15, 4,15, 4, 0, 1, 0, 0, 0, 1, 1 }
+
+@v21 = { ; Bell
+;       TL FB
+        28, 2,
+; AR DR SL RR KL MT AM VB EG KR DT
+  15, 5, 1, 2, 0, 5, 0, 0, 0, 0, 0,
+  15, 4, 2, 5, 0, 3, 0, 0, 0, 0, 0 }
+
+@v22 = { ; Base overlay
+;       TL FB
+        30, 7,
+; AR DR SL RR KL MT AM VB EG KR DT
+  15, 6,10,10, 0, 2, 0, 0, 0, 1, 0,
+  12, 4, 5, 5, 0, 6, 0, 0, 1, 0, 0 }
+  
+@v23 = { ; Bell
+;       TL FB
+        25, 7,
+; AR DR SL RR KL MT AM VB EG KR DT
+  11, 5,14, 1, 0, 3, 0, 0, 0, 1, 1,
+  11, 3, 0, 0, 0, 2, 0, 0, 0, 1, 0 }
+
+@v24 = { ; Brass Slow
+;       TL FB
+        25, 7,
+; AR DR SL RR KL MT AM VB EG KR DT
+   6, 3, 2,15, 0, 2, 0, 0, 1, 1, 0,
+   7, 2, 2,15, 0, 2, 0, 0, 1, 0, 0 }
+
+@v25 = { ; Brass Quick
+;       TL FB
+        25, 7,
+; AR DR SL RR KL MT AM VB EG KR DT
+  12, 3, 2,15, 0, 2, 0, 0, 1, 1, 0,
+  13, 2, 2,15, 0, 2, 0, 0, 1, 0, 0 }
+
+
+@v26 = { ; Strings
+;       TL FB
+        22, 5,
+; AR DR SL RR KL MT AM VB EG KR DT
+  15, 0, 0, 0, 0, 2, 0, 0, 1, 0, 0,
+   8, 5, 1, 6, 0, 8, 0, 0, 1, 0, 0 }
+
+@v27 = {						;BRASS
+;       TL FB
+        25, 7,
+; AR DR SL RR KL MT AM VB EG KR DT
+   8, 8, 1, 2, 0, 0, 0, 1, 0, 0, 0,
+   8, 2, 1, 1, 1, 1, 0, 1, 0, 0, 0 }
+
+;   1-3 ... PSG
+;   4-8 ... SCC
+;   9-e ... OPLL
+
+
+9 o1 v15 @16 b-8b-8b-8b-8 b-8b-8b-8b-8
+; a o3 v10 @15 b-8b-8b-8b-8 b-8b-8b-8b-8
+
